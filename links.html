@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p>a{
+            color: green;
+            display: inline-block;
+            border-right: solid red 3px;
+            padding: 10px 10px 10px 10px;
+        }
+        a:hover{
+            color: red;
+        }
+
+        table td{
+            color:  green;
+            padding: 10px;
+            border-right: solid red;
+            text-decoration: underline;
+        }
+        td:hover{
+            color: red
+        }
+        p span a{
+            color: green;
+            display: inline-block;
+            border-right: solid red 3px;
+            padding: 10px;
+        }
+        ul li{
+            display: inline-block;
+            border-right: solid red 3px;
+            padding: 10px;
+        }
+        ul a{
+            color: green;
+        }
+        li:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <p><a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четвертая ссылка</a>
+        <a href="#">пятая ссылка</a></p>
+    </div> 
+
+    <div class="second">
+        <table>
+            <tr>
+                <td>первая ссылка</td>
+                <td>вторая ссылка</td>
+                <td>третья ссылка</td>
+                <td>четвертая ссылка</td>
+                <td>пятая ссылка</td>
+            </tr>
+         </table>
+    </div>
+
+    <div class="third">
+        <p> <span><a href="#">первая ссылка</a></span>
+        <span><a href="#">вторая ссылка</a></span>
+        <span><a href="#">третья ссылка</a></span>
+        <span><a href="#">четвертая ссылка</a></span>
+        <span><a href="#">пятая ссылка</a></span></p>
+    </div>
+
+    <div class="fourth">
+        <ul style="list-style-type: none;">
+            <li><a href="#">первая ссылка</a></li>
+            <li><a href="#">вторая ссылка</a></li>
+            <li><a href="#">третья ссылка</a></li>
+            <li><a href="#">четвертая ссылка</a></li>
+            <li><a href="#">пятая ссылка</a></li>
+        </ul>
+    </div>
+</body>
+</html>
