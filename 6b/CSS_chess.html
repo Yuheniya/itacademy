@@ -12,46 +12,24 @@
     height: 50px;
     border: solid gray 1px;
   }
-table::first-line{
-    height: 25px;
-}
-  tr:first-child{
-    background-color: rgb(143, 224, 143);
+  tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
   }
-  tr:last-child{
-    background-color:rgb(143, 224, 143);
+  tr:nth-child(even) td:nth-child(odd){
+    background-color: black;
   }
-
-   tr td:first-child{
-    background-color:rgb(143, 224, 143);
-   }
-   tr td:last-child{
-    background-color:rgb(143, 224, 143);
-   }
-   tr:nth-child(3) td:nth-of-type(3),tr:nth-child(3) td:nth-of-type(5),tr:nth-child(3) td:nth-of-type(7),tr:nth-child(3) td:nth-of-type(9){
-        background-color: black;
-   }
-   tr:nth-child(5) td:nth-of-type(3),tr:nth-child(5) td:nth-of-type(5),tr:nth-child(5) td:nth-of-type(7),tr:nth-child(5) td:nth-of-type(9){
-        background-color: black;
-   }
-   tr:nth-child(7) td:nth-of-type(3),tr:nth-child(7) td:nth-of-type(5),tr:nth-child(7) td:nth-of-type(7),tr:nth-child(7) td:nth-of-type(9){
-        background-color: black;
-   }
-   tr:nth-child(9) td:nth-of-type(3),tr:nth-child(9) td:nth-of-type(5),tr:nth-child(9) td:nth-of-type(7),tr:nth-child(9) td:nth-of-type(9){
-        background-color: black;
-   }
-   tr:nth-child(2) td:nth-of-type(2),tr:nth-child(2) td:nth-of-type(4),tr:nth-child(2) td:nth-of-type(6),tr:nth-child(2) td:nth-of-type(8){
-        background-color: black;
-   }
-   tr:nth-child(4) td:nth-of-type(2),tr:nth-child(4) td:nth-of-type(4),tr:nth-child(4) td:nth-of-type(6),tr:nth-child(4) td:nth-of-type(8){
-        background-color: black;
-   }
-   tr:nth-child(6) td:nth-of-type(2),tr:nth-child(6) td:nth-of-type(4),tr:nth-child(6) td:nth-of-type(6),tr:nth-child(6) td:nth-of-type(8){
-        background-color: black;
-   }
-   tr:nth-child(8) td:nth-of-type(2),tr:nth-child(8) td:nth-of-type(4),tr:nth-child(8) td:nth-of-type(6),tr:nth-child(8) td:nth-of-type(8){
-        background-color: black;
-   }
+  tr:first-child td:nth-child(even), tr:first-child td:nth-child(odd){
+    background-color: rgb(143, 216, 143);
+  }
+  tr:last-child td:nth-child(odd), tr:last-child td:nth-child(even){
+    background-color: rgb(143, 216, 143);
+  }
+  .CHESS tr td:first-child{
+    background-color: rgb(143, 216, 143);
+  }
+  .CHESS tr td:last-child{
+    background-color: rgb(143, 216, 143);
+  }
 </style>
 
 <table class='CHESS'>
