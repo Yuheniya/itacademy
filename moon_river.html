@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <style>
         .head{
             display: inline-flex;
@@ -23,24 +24,90 @@
             margin-left: 731px;
             margin-top: 427px;
         }
-        .moon{
+        .lable{
+            width: 257px;
+            height: 28px;
+            margin-top: 70px;
+            margin-left: 162px;
+        }
+        .lable .moon{
+           position: absolute;
+        }
+        .lable .vector{
             position: absolute;
-            width: 257.04px;
-            height: 28.35px;
-            left: 0.86px;
-            top: 10.33px;
-            margin-left: 162.86px;
-            margin-top: 70.33px;
+            z-index: 1;
+            padding-left: 82px;
+            padding-top: 3px;
         }
-        .vector{
-            
+        .name p{
+            position: absolute;
+            margin-left: 162px;
+            margin-top: 439px;
+            font-family: 'Forum';
+            font-size: 64px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
         }
+        
+        .name p:nth-child(3){
+            position: absolute;
+            margin-left: 459px;
+            margin-top: 560px;
+            font-family: 'Segoe UI';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        
+        }
+        .icons img:first-child{
+            position: absolute;
+            width: 22px;
+            height: 19px;
+            left: 1018px;
+            top: 77px;
+        }
+        .icons img:nth-child(even){
+            position: absolute;
+width: 13px;
+height: 20px;
+left: 1080px;
+top: 77px;
+        }
+        .icons img:nth-child(3){
+            position: absolute;
+width: 15px;
+height: 20px;
+left: 1133px;
+top: 77px;
+        }        
     </style>
 </head>
 <body>
     <div class="head">
-        <div class="name"> <img src="Vector.png" alt="" class="moon"> <img src="Vector2.png" alt="" class="Vector"> <img src="ring.png" alt="" class="ring"></div>
-        <div class="menu"></div>
+        <div class="name"> 
+            <div class="lable">
+                <img src="Vector.png" alt="" class="moon"> 
+                <img src="Vector2.png" alt="" class="vector">
+            </div>
+            <p>HIGH JEWELRY</p>
+            <p>Смотреть коллекцию</p>
+            <img src="ring.png" alt="" class="ring"></div>
+        <div class="menu">
+            <div class="icons" style="display: inline-block;">
+                <img src="heart.png" alt="">
+                <img src="clients.png" alt="">
+                <img src="bag.png" alt="">
+                <div class="list">
+                    <img src="Line 5.png" alt="">
+                    <img src="Line 5.png" alt="">
+                    <img src="Line 5.png" alt="">
+                </div>
+            </div>
+        </div>
+    
     </div>
 </body>
 </html>
