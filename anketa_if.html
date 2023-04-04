@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var nameF=prompt('Введите вашy фамилию');
+    var nameN=prompt('Введите ваше имя');
+    var nameT=prompt('Введите ваше отчество');
+    console.log ('Ваше Фио:' + nameF + nameN + nameT);
+    var ageY=prompt('Введите ваш возраст в годах');
+    console.log(ageY);
+    var age=parseInt(ageY);
+    var male=confirm('Ваш пол мужской?');
+    if (male==true){
+        console.log('Ваш пол Мужской');
+    } else {
+        console.log('Ваш пол женский');
+    }
+    if (age>65){
+            console.log('вы на пенсии:да');
+        } else {
+            console.log('Вы на пенсии: нет');
+        }; 
+    alert ('Ваше Фио: ' + nameF +' '+ nameN +' '+ nameT
+        + 'Ваш возраст' + ageY + 'Ваш возраст в днях' + (age*365)) ;
+    </script>
+</body>
+</html>
