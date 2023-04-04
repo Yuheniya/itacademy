@@ -14,20 +14,24 @@
     console.log ('Ваше Фио:' + nameF + nameN + nameT);
     var ageY=prompt('Введите ваш возраст в годах');
     console.log(ageY);
-    var age=parseInt(ageY);
+    var age = parseInt(ageY);
     var male=confirm('Ваш пол мужской?');
-    if (male==true){
-       console.log('Ваш пол Мужской');
+    var man = 'Ваш пол мужской';
+    if (male == true){
+       console.log(man);
     } else {
-        console.log('Ваш пол женский');
+        man = 'Ваш пол женский';
+        console.log(man);
     }
-    if (age>65){
-            console.log('вы на пенсии:да');
+    var isRetiree = 'Вы на пенсии: да';
+    if (age > 65){
+            console.log(isRetiree);
         } else {
-            console.log('Вы на пенсии: нет');
+            isRetiree = "Вы на пенсии: нет";
+            console.log(isRetiree);
         }; 
     alert ('Ваше Фио: ' + nameF +' '+ nameN +' '+ nameT +"\n"
-        + 'Ваш возраст' + ageY +"\n" + 'Ваш возраст в днях' + (age*365) + "\n" + (male)) ;
+        + 'Ваш возраст ' + ageY +"\n" + 'Ваш возраст в днях ' + (age * 365) + "\n" + man + "\n" + isRetiree) ;
     </script>
 </body>
 </html>
