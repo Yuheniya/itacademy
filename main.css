@@ -1,0 +1,191 @@
+.head{
+    display: inline-flex;
+    background: url(Rectangle\ 2.png) no-repeat;
+    background-position: right top;
+}
+.name{
+    width: 878px;
+    height: 1024px;
+}
+.menu{
+    width: 562px;
+    height: 1024px;
+}
+.ring{
+    margin-left: 731px;
+    margin-top: 427px;
+}
+.lable{
+    width: 257px;
+    height: 28px;
+    margin-top: 70px;
+    margin-left: 162px;
+}
+.lable .moon{
+   position: absolute;
+}
+.lable .vector{
+    position: absolute;
+    z-index: 1;
+    padding-left: 82px;
+    padding-top: 3px;
+}
+.name p{
+    position: absolute;
+    margin-left: 162px;
+    margin-top: 439px;
+    font-family: 'Forum';
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+}
+
+.name p:nth-child(3){
+    position: absolute;
+    margin-left: 459px;
+    margin-top: 560px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+}
+.name p:nth-child(5){
+    width: 20px;
+    height: 21px;
+    font-size: 16px;
+    display: flex;
+    color: #272727;
+    margin-left: 162px;
+    margin-top: 259px;
+}
+.lang-ru{
+    text-align: rights;
+    width: 30px;
+    height: 21px;
+    border: 1px solid white;
+    background-color: white;
+}
+.name p:nth-child(6){
+    width: 20px;
+    height: 21px;
+    font-size: 16px;
+    display: flex;
+    color: #272727;
+    margin-left: 202px;
+    margin-top: 259px;
+}
+.lang-en{
+    text-align: rights;
+    width: 30px;
+    height: 21px;
+    border: 1px solid white;
+    background-color: white;
+}
+.icons>img:first-child{
+    position: absolute;
+    width: 22px;
+    height: 19px;
+    left: 1018px;
+    top: 77px;
+}
+.icons>img:nth-child(even){
+    position: absolute;
+    width: 13px;
+    height: 20px;
+    left: 1080px;
+    top: 77px;
+}
+.icons >img:nth-child(3){
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    left: 1133px;
+    top: 77px;
+}    
+.icons{
+    display: inline-block;
+}
+.list img:nth-child(2){
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    left: 1248px;
+    top: 79px;
+    border: 0.6px solid #FFFFFF;
+}
+.list img:nth-child(3){
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    left: 1248px;
+    top: 87px;
+    border: 0.6px solid #FFFFFF;
+}
+.list img:nth-child(4){
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    left: 1248px;
+    top: 95px;
+    border: 0.6px solid #FFFFFF;
+}
+.btn{
+    background-color:#272727;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 1200px;
+    top: 75px;
+    overflow: hidden;
+    border: 1px solid #272727;
+    color: #272727;
+}
+.btn option{
+    background-color: #272727;
+    color: rgb(208, 206, 206);
+    font-size: 20px;
+    text-align: center;
+}
+.ring-name p:nth-child(1){
+    position: absolute;
+    width: 198px;
+    height: 21px;
+    left: 1080px;
+    top: 878px;
+    font-family: 'Forum';
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.ring-name p:nth-child(2){
+    position: absolute;
+    width: 189px;
+    height: 23px;
+    left: 1089px;
+    top: 908px;
+    font-family: 'Forum';
+    align-items: center;
+    text-align: right;
+    color: #C2C2C2;
+}
+.ring-name p:nth-child(3){
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 1199px;
+    top: 940px;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #EFC58B;
+
+}
