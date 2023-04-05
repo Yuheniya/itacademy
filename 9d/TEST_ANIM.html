@@ -20,26 +20,34 @@
                 color: white;
             }
         }
+
         @keyframes ball-animation {
             from {
-                margin-left:20px;
+                margin-left: 20px;
                 width: 150px;
             }
 
             to {
-                margin-left:500px ;
+                margin-left: 500px;
                 width: 300px;
             }
         }
-        @keyframes text-animation{
+
+        @keyframes text-animation {
             from {
                 background-color: rgb(35, 202, 37);
+                margin-left: 20px;
+                width: 150px;
+
             }
 
             to {
                 background-color: rgb(230, 113, 4);
+                margin-left: 500px;
+                width: 300px;
             }
         }
+
         .top-text {
             color: white;
             height: 60px;
@@ -65,21 +73,23 @@
         }
 
         .all {
-           width: 60%;
-           height: 700px;
-           border: 1px solid black;
+            width: 60%;
+            height: 700px;
+            border: 1px solid black;
         }
-        
-        .all:hover > .ball {
+
+        .all:hover>.ball {
             transform: scale(2);
             margin-top: 80px;
             animation: ball-animation 5s;
         }
-        .all:hover > .text {
+
+        .all:hover>.text {
             height: 400px;
             transition: height 1s;
-            animation: text-animation 3s steps(8) infinite; 
+            animation: text-animation 3s steps(8) infinite;
         }
+       
     </style>
 </head>
 
