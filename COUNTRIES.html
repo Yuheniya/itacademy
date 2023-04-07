@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="addCountrys()">ввод информации о стране</button>
+    <button type="button" onclick="getCountryInform()">получение информации о стране</button>
+    <button type="button" onclick="listCountrys()">перечень всех стран</button>
+    <button type="button" onclick="deleteCountry()">удаление информации о стране</button>
+
+    <script>
+        function addCountrys(countryName, capitalName){
+            var countryName=prompt('ВВедите название страны');
+            var capitalName=prompt('ВВедите название столицы');
+            addCountry(countryName, capitalName);
+        }
+        function getCountryInform(countryName){
+            var countryName=prompt('ВВедите название интересующей страны: ');
+            getCountryInfo(countryName);
+        }
+        
+    </script>
+    <script src="countries.js"></script>
+</body>
+
+</html>
