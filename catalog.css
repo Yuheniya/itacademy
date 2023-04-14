@@ -81,3 +81,28 @@
     top: 1396px;
     border: 1px solid #FFFFFF;
 }
+.adres{
+    display: flex;
+    position: absolute;
+    width: 710px;
+    height: 604px;
+    left: 0px;
+    top: 1651px;
+    background: #272727;
+}
+.adres p:first-child{
+    position: absolute;
+    width: 386px;
+    height: 106px;
+    left: 162px;
+    top: 1822px;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
