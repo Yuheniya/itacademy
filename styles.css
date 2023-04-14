@@ -1,0 +1,76 @@
+.container >div{
+    /* display: flex;
+    flex-direction: column; */
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:33px 0 31px 0;
+}
+.header button {
+    background-color: white;
+    border: 0px;
+    font-family: 'Poppins', bold;
+}
+.header button a{
+    color: gray;
+    text-decoration: none;
+}
+.header button a:hover{
+    color: black;
+}
+.header img{
+    width: 100%;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 105px;
+}
+.name p:first-child{
+    font-family: 'Poppins',bold;
+    font-size: 47px;
+    line-height: 59px;
+    width: 124px;
+}
+.name p:nth-child(2){
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 22px;
+}
+.name p:nth-child(3){
+    font-family: 'Poppins', bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+}
+.name img{
+    flex-wrap: nowrap;
+    width:100%;
+}
+.biography{
+    display: flex;
+    flex-direction: column;
+    background-color:  #F6F6F6;
+    overflow: visible;
+}
+.biography p:first-child{
+    position: relative;
+    font-family: 'Poppins', bold;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+.biography p:last-child{
+
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
