@@ -1,6 +1,8 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
 .container >div{
-    /* display: flex;
-    flex-direction: column; */
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -49,7 +51,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #828282;
-    transform: rotate(-90deg);
+    transform: translateX(20px) rotate(-90deg);
 }
 .name img{
     flex-wrap: nowrap;
@@ -98,6 +100,7 @@
 .stars{
     display: inline-flex;
     flex-direction: row-reverse;
+    padding-bottom: 110px;
 }
 .stars img:hover, img:hover~img{
     content: url(Star.png);
@@ -118,8 +121,32 @@
     line-height: 17px;
     text-align: center;
     color: #828282;
-    padding-bottom: 20px;
+    padding:23px 0 20px 0;
 }
 .figma p{
     margin-bottom: 32px;
 }
+.portfolio{
+    background-color:  #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 112px 0 96px 0;
+}
+.portfolio h1{
+    font-family: 'Poppins';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+.portfolio img{
+    width: 100%;
+    margin: 99px 0 44px 0;
+}
+.portfolio p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: underline;
+}
+.
