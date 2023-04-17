@@ -103,7 +103,7 @@ body, html{
     padding-bottom: 110px;
 }
 .stars img:hover, img:hover~img{
-    content: url(Star.png);
+    content: url(../image/Star.png);
 }
 .programs>div{
     display: flex;
