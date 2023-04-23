@@ -8,25 +8,30 @@ body, html{
 }
 .header{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     padding-top:33px;
 }
-.header button {
-    background-color: white;
-    border: 0px;
+.list{
+    font-size: 18px;
     font-family: 'Poppins', bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.header button a{
+.list a{
     color: gray;
     text-decoration: none;
 }
-.header button a:hover{
+.header a:hover{
     color: black;
 }
-.header img{
+.line{
+    flex-wrap: wrap;
     width: 100%;
     padding-top: 31px;
+}
+.header>img:first-child{
+    display: none;
 }
 .name{
     display: flex;
