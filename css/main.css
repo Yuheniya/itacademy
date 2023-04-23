@@ -1,6 +1,11 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+}
 .head{
+    width: 100%;
     display: inline-flex;
-    background: url(Rectangle\ 2.png) no-repeat;
+    background: url(../image/Rectangle\ 2.png) no-repeat;
     background-position: right top;
 }
 .name{

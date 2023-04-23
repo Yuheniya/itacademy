@@ -1,0 +1,45 @@
+.home_page{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.label_part{
+    width: 60%;
+}
+.menu{
+    width: 40%;
+    background: url(../image/Rectangle\ 2.png);
+}
+.label{
+    width: 257px;
+    padding-top: 70px;
+    padding-left: 162px;
+}
+.label img:nth-child(1){
+    position: absolute;
+}
+.label img:nth-child(2){
+    position: absolute;
+    padding-left: 82px;
+    padding-top: 3px;
+}
+.ring{
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name>p{
+    font-family: 'Forum';
+    font-size: 64px;
+    line-height: 71px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    padding-left: 162px;
+    padding-top: 439px;
+}

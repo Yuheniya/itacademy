@@ -1,11 +1,11 @@
 .body{
-    display: flex;
+    margin: 0 auto;
 }
 .for-man{
     width: 710px;
     height: 587px;
     margin-top: 20px;
-    background: url(for-man.webp) no-repeat;
+    background: url(../image/for-man.webp) no-repeat;
     background-size: 100%;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@
     height: 587px;
     margin-top: 20px;
     margin-left: 20px;
-    background: url(for-woman.jpg) no-repeat;
+    background: url(../image/for-woman.jpg) no-repeat;
     background-size: 100%;
     overflow: hidden;
 }
