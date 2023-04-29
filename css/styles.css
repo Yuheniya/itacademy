@@ -62,13 +62,13 @@ body, html{
     flex-wrap: nowrap;
     width:100%;
 }
-.biography{
+#biography{
     display: flex;
     flex-direction: column;
     background-color:  #F6F6F6;
     overflow: visible;
 }
-.biography p:first-child{
+#biography p:first-child{
     margin-top: 120px;
     position: relative;
     font-family: 'Poppins', bold;
@@ -76,21 +76,21 @@ body, html{
     line-height: 42px;
     text-align: center;
 }
-.biography p:last-child{
+#biography p:last-child{
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     margin-bottom: 107px;
 }
-.skills p:first-child{
+#skills p:first-child{
     margin: 91px 0 69px 0;
     font-family: 'Poppins';
     font-size: 34px;
     line-height: 42px;
     text-align: center;
 }
-.skills p:nth-child(2){
+#skills p:nth-child(2){
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
@@ -131,40 +131,41 @@ body, html{
 .figma p{
     margin-bottom: 32px;
 }
-.portfolio{
+#portfolio{
     background-color:  #F6F6F6;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 112px 0 96px 0;
 }
-.portfolio h1{
+#portfolio h1{
     font-family: 'Poppins';
     font-size: 34px;
     line-height: 42px;
     text-align: center;
 }
-.portfolio img{
+#portfolio img{
     width: 100%;
     margin: 99px 0 44px 0;
 }
-.portfolio a{
+#portfolio a{
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: black;
 }
-.portfolio div{
+#portfolio div{
     width: 936px;
     margin-left:auto;
     margin-right: auto;
 }
-.contacts{
+#contacts{
     display: flex;
     flex-direction: column;
     padding: 114px 0 85px 0;
 }
-.contacts p:first-child{
+#contacts p:first-child{
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 34px;
@@ -172,17 +173,17 @@ body, html{
     text-align: center;
     padding-bottom: 20px;
 }
-.contacts p:nth-child(2){
+#contacts p:nth-child(2){
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     padding-bottom: 42px;
 }
-.contacts img{
+#contacts img{
    margin: 0 auto;
 }
-.contacts a{
+#contacts a{
     font-family: 'Poppins';
     line-height: 22px;
     text-align: center;
@@ -203,9 +204,6 @@ body, html{
     background-color: white;
     border: 0px white;
 }
-.apps img:hover{
-    width: 50px;
-}
 .like{
     font-family: 'Poppins';
     font-size: 14px;
@@ -213,4 +211,7 @@ body, html{
     text-align: center;
     color: #828282;
     padding:10px 0 123px 0;
+}
+.adapt_menu{
+    display: none;
 }

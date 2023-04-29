@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 400px)" href="../css/styles_adaptiv.css">
+    <link rel="stylesheet" media="screen and (max-width: 950px)" href="../css/styles_adaptiv.css">
 </head>
 <body>
     <div class="container">
@@ -15,14 +15,35 @@
             <img src="../image/menu.png" alt="">
            <div class="list">
                     <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contacts</a>
+                    <a href="#biography">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contacts">Contacts</a>
             </div>
             <div class="line"> 
                 <img src="../image/line.png" alt="">
             </div> 
+        </div>
+        <div class="adapt_menu">
+            <input id="toggle" type="checkbox"></input>
+
+            <label for="toggle" class="hamburger">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </label>
+            
+            <div class="nav">
+              <div class="nav-wrapper">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#biography">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contacts">Contacts</a>
+                </nav>
+              </div>
+            </div>
         </div>
         <div class="name">
             <p>Denis Novik</p>
@@ -33,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="biography">
+    <div id="biography">
             <p>About me</p>
             <p>Hi, I'm Denis – UX/UI designer from Minsk.<br> 
                 I'm interested in design and everything connected with it.<br><br>
@@ -43,7 +64,7 @@
                 with wonderful people.</p>
     </div>
     <div class="container">
-        <div class="skills">
+        <div id="skills">
             <p>Skills</p>
             <p>I work in such programs as</p> 
         </div>
@@ -94,9 +115,9 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio">
             <h1>Portfolio</h1>
-            <div class="porfolio_img"><img src="../image/portfolio1.png" alt=""></div>
+            <div class="portfolio_img"><img src="../image/portfolio1.png" alt=""></div>
             <a href="#">Online fashion store - Homepage</a>
             <div class="portfolio_img"><img src="../image/reebok_web.png" alt=""></div>
             <a href="#">Reebok Store - Concept</a>
@@ -104,7 +125,7 @@
             <a href="#">Braun Landing Page - Concept</a>
     </div>
     <div class="container">
-        <div class="contacts">
+        <div id="contacts">
             <p>Contacts</p>
             <p>Want to know more or just chat? <br>
                     You are welcome!</p>
