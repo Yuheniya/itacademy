@@ -6,7 +6,7 @@ body, html{
     width: 943px;
     margin: 0 auto;
 }
-.header{
+#header{
     display: flex;
     flex-direction: column;
     padding-top:33px;
@@ -22,7 +22,7 @@ body, html{
     color: gray;
     text-decoration: none;
 }
-.header a:hover{
+#header a:hover{
     color: black;
 }
 .line{
@@ -30,35 +30,35 @@ body, html{
     width: 100%;
     padding-top: 31px;
 }
-.header>img:first-child{
+#header>img:first-child{
     display: none;
 }
-.name{
+#name{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 105px;
 }
-.name p:first-child{
+#name p:first-child{
     font-family: 'Poppins',bold;
     font-size: 47px;
     line-height: 59px;
     width: 124px;
 }
-.name p:nth-child(2){
+#name p:nth-child(2){
     font-family: 'Poppins';
     font-size: 18px;
     line-height: 22px;
 }
-.name p:nth-child(3){
+#name p:nth-child(3){
     font-family: 'Poppins', bold;
     font-size: 16px;
     line-height: 20px;
     color: #828282;
     transform: translateX(20px) rotate(-90deg);
 }
-.name img{
+#name img{
     flex-wrap: nowrap;
     width:100%;
 }
@@ -214,4 +214,18 @@ body, html{
 }
 .adapt_menu{
     display: none;
+}
+.onTop{
+    display: block;
+    position: sticky;
+    left: 2%;
+    top: 85%;
+    width: 60px;
+}
+.onTop img{
+    width: 50px;
+}
+.onTop button{
+    border: none;
+    background: none;
 }
