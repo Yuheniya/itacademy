@@ -1,0 +1,147 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1920px;
+    padding: 0 100px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.header_bottom{
+    border-bottom: 3px solid #DA6B62;
+}
+.logo img{
+    width: 50px;
+    padding: 16px 0;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 40px;
+    color: #141323;
+    text-align: right;
+}
+.menu a{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 40px;
+    color: #141323;
+    text-align: right;
+    text-decoration: none;
+    padding: 30px;
+}
+.face_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 1015px;
+    padding: 96px 64px 0 0;
+}
+.title h1{
+    font-family: 'Roboto';
+    font-size: 64px;
+    line-height: 86px;
+    text-transform: uppercase;
+    color: #141323;
+    margin: 0;
+    padding-bottom: 80px;
+}
+.title p{
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 48px;
+    color: #141323;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.button_info{
+    display: flex;
+    flex-direction: row;
+}
+.button_info button{
+    border: 3px solid #DA6B62;
+    border-radius: 20px 0px;
+    width: 340px;
+    height: 72px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: black;
+    background-color: white;
+    margin-right: 55px;
+}
+.button_info button:hover{
+    background-color: #DA6B62;
+    color: white;
+}
+.face_img{
+    padding: 50px 81px 0 0;
+}
+.container p{
+    font-family: 'Roboto';
+    font-size: 40px;
+    line-height: 47px;
+    color: #141323;
+}
+.about_course{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.about_course div{
+    position: relative;
+    background: #E5F8F6;
+    border-radius: 60px 0px;
+    width: 560px;
+    height: 265px;
+}
+.about_course p{
+    position: absolute;
+    left: 130px;
+    top: 10px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    color: #141323;
+}
+.about_course ol{
+    position: absolute;
+    left: 20px;
+    top: 130px;
+}
+.about_course li{
+    list-style-type: disc;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 30px;
+    color: #141323;
+    padding-left: 20px;
+}
+.about_course img:nth-child(2){
+    position: absolute;
+    left: 0;
+}
+.about_course img:nth-child(3){
+    position: absolute;
+    left: 16px;
+}
+.about_course img:nth-child(4){
+    position: absolute;
+    left: 491px;
+    top: 123px;
+}
