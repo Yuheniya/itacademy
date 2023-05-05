@@ -3,7 +3,6 @@ body, html{
     padding: 0;
 }
 .container{
-    width: 1920px;
     padding: 0 100px;
 }
 .header{
@@ -24,17 +23,13 @@ body, html{
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 20px;
     line-height: 40px;
     color: #141323;
     text-align: right;
 }
 .menu a{
-    font-family: 'Roboto';
-    font-size: 24px;
-    line-height: 40px;
     color: #141323;
-    text-align: right;
     text-decoration: none;
     padding: 30px;
 }
@@ -46,25 +41,23 @@ body, html{
 .title{
     display: flex;
     flex-direction: column;
-    width: 1015px;
     padding: 96px 64px 0 0;
 }
 .title h1{
     font-family: 'Roboto';
-    font-size: 64px;
-    line-height: 86px;
+    font-size: 40px;
+    line-height: 60px;
     text-transform: uppercase;
-    color: #141323;
     margin: 0;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 .title p{
-    font-family: 'Roboto';
-    font-size: 30px;
-    line-height: 48px;
-    color: #141323;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    font-family: 'Roboto';
+    font-size: 25px;
+    line-height: 47px;
+    color: #141323;
 }
 .button_info{
     display: flex;
@@ -73,13 +66,9 @@ body, html{
 .button_info button{
     border: 3px solid #DA6B62;
     border-radius: 20px 0px;
-    width: 340px;
-    height: 72px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    width: 300px;
+    height: 65px;
     font-size: 24px;
-    line-height: 40px;
     color: black;
     background-color: white;
     margin-right: 55px;
@@ -88,60 +77,114 @@ body, html{
     background-color: #DA6B62;
     color: white;
 }
-.face_img{
+.face_img img{
+    width: 450px;
     padding: 50px 81px 0 0;
 }
-.container p{
+.container > p{
     font-family: 'Roboto';
-    font-size: 40px;
+    font-size: 25px;
     line-height: 47px;
     color: #141323;
 }
-.about_course{
+.contingent{
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
-.about_course div{
+.contingent div{
     position: relative;
     background: #E5F8F6;
     border-radius: 60px 0px;
-    width: 560px;
-    height: 265px;
+    width: 32%;
+    height: 190px;
 }
-.about_course p{
+.contingent p{
     position: absolute;
-    left: 130px;
-    top: 10px;
+    left: 85px;
+    top: -20px;
     font-family: 'Roboto';
-    font-size: 30px;
+    font-size: 25px;
     line-height: 48px;
     text-align: center;
     color: #141323;
 }
-.about_course ol{
+.contingent ol{
     position: absolute;
-    left: 20px;
-    top: 130px;
+    left: 10px;
+    top: 94px;
 }
-.about_course li{
+.contingent li{
     list-style-type: disc;
     font-family: 'Roboto';
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
     color: #141323;
     padding-left: 20px;
 }
-.about_course img:nth-child(2){
+.contingent img:nth-child(1){
+    width: 80px;
+}
+.contingent img:nth-child(2){
     position: absolute;
     left: 0;
+    width: 390px;
 }
-.about_course img:nth-child(3){
+.contingent img:nth-child(3){
     position: absolute;
-    left: 16px;
+    left: 31px;
+    width: 391px;
 }
-.about_course img:nth-child(4){
+.contingent img:nth-child(4){
     position: absolute;
-    left: 491px;
-    top: 123px;
+    left: 337px;
+    top: 22px;
+    width: 84px;
+}
+.about_course{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: space-between;
+    width: 100%;
+}
+.filial{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 3px solid #DA6B62;
+    border-radius: 20px 0px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+.coach{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 3px solid #DA6B62;
+    border-radius: 20px 0px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+.experience{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border: 3px solid #DA6B62;
+    border-radius: 20px 0px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+.video{
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+.video img{
+    width: 700px;
 }
