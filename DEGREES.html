@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Градусов: <input type="text" id="meaning"> <br>
+        <button onclick=Celsius()>В Цельсия</button>
+        <button onclick=Fahrenheit()>В Фаренгейта</button>
+        <div id='degrees'></div>
+    </div>
+    <script>
+        function Celsius(){
+            let str = document.getElementById('meaning').value;
+            let result = (str - 32) * 5 /9; document.getElementById('degrees').innerHTML= str+"\xB0F is "+ result + "\xB0C";
+        }
+        function Fahrenheit(){
+            let str = document.getElementById('meaning').value;
+            let result2 =  str * 9 / 5 + 32; document.getElementById('degrees').innerHTML= str+"\xB0C is "+ result2 + "\xB0F"; 
+        }
+    </script>
+</body>
+</html>
