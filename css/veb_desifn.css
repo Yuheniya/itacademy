@@ -1,24 +1,30 @@
-body, html{
+body,
+html {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     padding: 0 100px;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
-.header_bottom{
+
+.header_bottom {
     border-bottom: 3px solid #DA6B62;
 }
-.logo img{
+
+.logo img {
     width: 50px;
     padding: 16px 0;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,22 +34,27 @@ body, html{
     color: #141323;
     text-align: right;
 }
-.menu a{
+
+.menu a {
     color: #141323;
     text-decoration: none;
     padding: 30px;
 }
-.face_page{
+
+.face_page {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.title{
+
+.title {
     display: flex;
+    width: 70%;
     flex-direction: column;
     padding: 96px 64px 0 0;
 }
-.title h1{
+
+.title h1 {
     font-family: 'Roboto';
     font-size: 40px;
     line-height: 60px;
@@ -51,7 +62,8 @@ body, html{
     margin: 0;
     padding-bottom: 60px;
 }
-.title p{
+
+.title p {
     margin: 0;
     padding-bottom: 15px;
     font-family: 'Roboto';
@@ -59,11 +71,13 @@ body, html{
     line-height: 47px;
     color: #141323;
 }
-.button_info{
+
+.button_info {
     display: flex;
     flex-direction: row;
 }
-.button_info button{
+
+.container button {
     border: 3px solid #DA6B62;
     border-radius: 20px 0px;
     width: 300px;
@@ -73,65 +87,71 @@ body, html{
     background-color: white;
     margin-right: 55px;
 }
-.button_info button:hover{
+
+.container button:hover {
     background-color: #DA6B62;
     color: white;
 }
-.face_img img{
-    width: 450px;
+
+.face_img img {
+    width: 100%;
     padding: 50px 81px 0 0;
 }
-.container > p{
+
+.container>p {
     font-family: 'Roboto';
     font-size: 25px;
     line-height: 47px;
     color: #141323;
 }
-.contingent{
+
+.contingent {
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
-.contingent div{
+
+.contingent div {
     position: relative;
     width: 32%;
     height: 190px;
 }
-.contingent img{
-    width: 100%;
 
+.contingent img {
+    width: 100%;
 }
-.contingent p{
+.contingent p {
     position: absolute;
-    left: 85px;
+    left: 20%;
     top: -20px;
     font-family: 'Roboto';
-    font-size: 25px;
-    line-height: 48px;
+    font-size: 20px;
+    padding: 15px 0;
+    line-height: 20px;
     text-align: center;
     color: #141323;
 }
-.contingent ol{
+.contingent ol {
     position: absolute;
-    left: 10px;
-    top: 94px;
+    left: 5%;
+    top: 30%;
 }
-.contingent li{
+.contingent li {
     list-style-type: disc;
     font-family: 'Roboto';
     font-size: 15px;
-    line-height: 25px;
+    line-height: 20px;
     color: #141323;
-    padding-left: 20px;
 }
-.about_course{
+.about_course {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 100px 100px 100px;
     justify-content: space-between;
     width: 100%;
 }
-.filial{
+
+.filial {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     border: 3px solid #DA6B62;
@@ -142,7 +162,8 @@ body, html{
     font-family: 'Roboto';
     font-size: 20px;
 }
-.coach{
+
+.coach {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     border: 3px solid #DA6B62;
@@ -153,7 +174,8 @@ body, html{
     font-family: 'Roboto';
     font-size: 20px;
 }
-.experience{
+
+.experience {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     border: 3px solid #DA6B62;
@@ -164,10 +186,217 @@ body, html{
     font-family: 'Roboto';
     font-size: 20px;
 }
-.video{
+
+.video {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
 }
-.video img{
-    width: 700px;
+
+.video img {
+    width: 100%;
+}
+
+.lessons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.lessons_info {
+    width: 50%;
+}
+
+.container h1 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #141323;
+}
+
+.lessons_info p {
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 48px;
+    color: #141323;
+}
+
+.lessons_img {
+    position: relative;
+    width: 50%;
+}
+
+.lessons_img img {
+    width: 80%;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+}
+
+.getConsultation {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.graduation_projects_img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.graduation_projects_img img {
+    padding: 20px 0;
+}
+#img_1{
+    width: 40%;
+    position: relative;
+}
+.graduation_projects_img div{
+    overflow: hidden;
+}
+.graduation_projects_img div img:nth-child(1){
+    width: 100%;
+    transition: 1s;
+    display: block; 
+}
+.graduation_projects_img div img:nth-child(1):hover{
+  transform: scale(1.2);
+}
+
+.graduation_projects_img div img:nth-child(2){
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+.img_2{
+    width: 40%;
+    position: relative;
+}
+.img_3{
+    width: 15%;
+    position: relative;
+}
+.img_4{
+    width: 15%;
+    position: relative;
+}
+.img_5{
+    width: 40%;
+    position: relative;
+}
+.img_6{
+    width: 40%;
+    position: relative;
+}
+.coaches{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.coaches div{
+    border: 3px solid #FC8D84;
+    margin: 20px 0 ;
+}
+.coaches img{
+    width: 30%;
+    padding: 5%;
+    float: left;
+}
+.coaches p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 20px;
+    color: #141323;
+}
+.coaches div span{
+    color: #DA6B62;
+}
+.coaches a{
+    color: #DA6B62;
+    padding: 100px;
+    text-decoration: none;
+}
+.Employment_program{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+.Employment_program>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(../image/Mask\ group\ 1.png) no-repeat;
+    background-size: 100%;
+}
+.mask_group1 div{
+    width: 30%;
+    height: 230px;
+}
+.mask_group2 div{
+    width: 30%;
+    height: 230px;
+}
+.Employment_program h3{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #141323;
+}
+.Employment_program li{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 18px;
+    color: #141323;
+    list-style-type: disc;
+}
+.slider{
+    position: relative;
+    max-width: 80%;
+    margin: 40px auto 100px auto;
+}
+.slider input{
+    display: none;
+}
+.slides {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+}
+.slides label {
+    display: inline-block;
+    width: 100px;
+    cursor: pointer;
+    margin: 0px 14px;
+    border: 3px solid #7b91a3;
+    background-color: #8eb4d8;
+}
+.slides label:hover{
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.7);
+    border: 4px solid #4a565f;
+}
+.slider_icons {
+    overflow: hidden;
+}
+.partners{
+    display: flex;
+    width: 30%;
+    transition: all 0.6s;
+}
+.partners img {
+    width: 50%;
+    flex-shrink: 0;
+    padding: 0 80px;
+}
+#slaid1:checked~.slider_icons .partners {
+    transform: translate(0);
+}
+#slaid2:checked~.slider_icons .partners {
+    transform: translateX(-300%);
+}
+#slaid3:checked~.slider_icons .partners {
+    transform: translateX(-500%);
 }
