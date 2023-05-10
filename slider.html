@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 70%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 48%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <swiper-container class="mySwiper" navigation="true">
+    <swiper-slide><img src="image/food_pic1.png" alt=""><img src="image/food_pic2.png" alt=""></swiper-slide>
+    <swiper-slide><img src="image/food_pic3.png" alt=""><img src="image/food_pic4.png" alt=""></swiper-slide>
+    <swiper-slide><img src="image/food_pic5.png" alt=""><img src="image/food_pic6.png" alt=""></swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
