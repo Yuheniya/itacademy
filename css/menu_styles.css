@@ -1,0 +1,212 @@
+body, html{
+    background: url(../image/placeholder2.jpg) no-repeat right, #1A1A1A;
+    background-size: contain;
+    background-position: top right;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 35px 0;
+}
+.logo {
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.logo img:first-child{
+    width: 25px;
+}
+.logo img:last-child{
+    height: 10px;
+}
+.menu{
+    width: 292px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    font-family: 'Barlow';
+    font-size: 14px;
+    color: #34C759;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+main{
+    width: 100%;
+    background: #1A1A1A;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+section{
+    position: relative;
+    padding: 50px;
+}
+section p:first-child{
+    font-family: 'Barlow';
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #303030;
+    margin: 0;
+}
+section p:last-child{
+    position: absolute;
+    left: 34%;
+    top:20%;
+    font-family: 'Barlow';
+    font-size: 36px;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    color: #D9D9D9;
+}
+
+.dish{
+    width: 30%;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+}
+.dish img{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+.dish_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dish h1{
+    font-family: 'Barlow';
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.dish_info{
+    padding: 20px;
+}
+.dish p{
+    font-family: 'Barlow';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+.rating{
+    display:inline-flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.rating img{
+    width: 25px;
+    height: 25px;
+}
+.rating p{
+    font-family: 'Barlow';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #B3B3B3;
+    padding: 20px;
+}
+.drinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.drink_card{
+    width: 22%;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+.drink_card img{
+    width: 100%;
+    height: 55%;
+    overflow: hidden;
+}
+.drink_card p{
+    font-family: 'Barlow';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding: 0;
+}
+.price{
+    font-family: 'Barlow';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #B3B3B3;
+    padding: 20px;
+}
+footer{
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+.info img{
+    width: 25px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    padding:30px 25%;
+    border-bottom: 1px solid #303030;
+}
+.info p{
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.info span{
+    font-family: 'Barlow';
+    font-size: 14px;
+    line-height: 60px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.footer_logo{
+    margin:40px auto ;
+    font-size: 12px;
+    text-align: center;
+    color: #737373;
+}
