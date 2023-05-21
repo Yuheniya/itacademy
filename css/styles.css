@@ -2,12 +2,22 @@ body, html{
     background: url(../image/placeholder.png) no-repeat right, #1A1A1A;
     background-size: contain;
     background-position: top right;
+    padding: 0;
+    margin: 0;
 }
 .container{
     width: 1110px;
     margin: 0 auto;
 }
-.header{
+body>img{
+    width: 100%;
+}
+.container>img{
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+#header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,8 +34,11 @@ body, html{
 .list a{
     font-family: 'Barlow';
     font-size: 14px;
-    color: #34C759;
+    color: white;
     text-decoration: none;
+}
+.list a:hover{
+    color: #34C759;
 }
 .list>div{
     position: relative;
@@ -55,9 +68,6 @@ body, html{
 }
 .menu:hover .menu-content {
     display: block;
-}
-.menu:hover .butt {
-    background-color: #3e8e41;
 }
 .container>h1{
     font-family: 'Barlow';
@@ -93,7 +103,7 @@ body, html{
 .green_button p{
     position: absolute;
     left: 24%;
-    top: 10%;
+    top: 35%;
     font-family: 'Barlow';
     font-weight: 700;
     font-size: 18px;
@@ -149,25 +159,24 @@ body, html{
     text-align: center;
     color: #A6A6A6;
 }
-swiper-container {
-  width: 70%;
-  padding-bottom: 100px;
+.container_slider_css{margin:50px auto;width:500px;height:300px;overflow:hidden;position:relative}
+.photo_slider_css{position:absolute;animation:round 16s infinite;opacity:0;width:100%}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
 }
-
-swiper-slide {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+img:nth-child(1){animation-delay:12s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:4s}
+img:nth-child(4){animation-delay:0}
+@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;height:190px}
 }
-
-swiper-slide img {
-  display: block;
-  width: 48%;
-  object-fit: cover;
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;height:190px}
 }
 .work{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .work img:nth-child(1){
@@ -189,14 +198,6 @@ swiper-slide img {
     width: 200px;
     padding: 24px;
 }
-.cards h1{
-    font-family: 'Barlow';
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: -0.275px;
-    text-transform: capitalize;
-    color: #FFFFFF;
-}
 .cards img{
     width: 56px;
 }
@@ -210,7 +211,6 @@ swiper-slide img {
 }
 .cards div:hover{
     background: #34C759;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     color: #000000;
 }
@@ -284,6 +284,7 @@ swiper-slide img {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
 }
 .button:hover{
     background: #34C759;
@@ -313,7 +314,7 @@ swiper-slide img {
 .months_chefs div p:first-child{
     font-family: 'Barlow';
     font-size: 18px;
-    line-height: 0;
+    line-height: 3;
     letter-spacing: -0.225px;
     color: #FFFFFF;
     text-align: left;
@@ -342,21 +343,6 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid #303030;
     margin: 25px;
-}
-.follow{
-    background: #262626;
-    border: 2px solid #303030;
-    border-radius: 30px;
-    width: 100px;
-    height: 40px;
-}
-.follow p{
-    font-weight: 900;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #737373;
 }
 .name{
     display: flex;
@@ -524,5 +510,32 @@ footer .info{
 }
 .container>img{
     width: 100%;
+}
+.info{
+    padding-bottom: 20px;
+}
+.work{
+    flex-direction: column;
+}
+.cards{
+    flex-wrap: wrap;
+}
+.cards div{
+    width: 35%;
+    margin: 0 10px 10px 0;
+    padding: 24px;
+}
+.product_cards>div{
+    width: 100%;
+}
+.chefs>div{
+    flex-direction: column;
+}
+.apps{
+    flex-direction: column;
+}
+.apps>div {
+    width: 100%;
+    margin-bottom: 20px;
 }
 }

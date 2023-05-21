@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/chefs.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="video-bg">
+        <video src="image/pasta_-_33262 (Original).mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+
+<div class="container">
+    <div class="header-back">
+        <div id="header">
+            <div class="logo">
+                <img src="image/apple.png" alt="">
+                <img src="image/HEALTHY SWITCHER.png" alt="">
+            </div>
+            <div class="list">
+                <a href="food_page.html">Main</a>
+                <div class="menu">
+                    <a href="menu.html" class="butt">Menu</a>
+                    <div class="menu-content">
+                        <a href="menu.html#Breakfast">Breakfast</a>
+                        <a href="menu.html#Lunch">Lunch</a>
+                        <a href="menu.html#Dinner">Dinner</a>
+                        <a href="menu.html#drinks">Drinks</a>
+                    </div>
+                </div>
+                <a href="#">Chefs</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a href="food_page.html">Main</a></li>
+                  <li><a href="menu.html" class="butt">Menu</a></li>
+                  <li><a href="#">Chefs</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+    </div>
+    
+        
+    </div>
+</div>
+<img src="image/line.png" alt="">
+    <div class="chefs-container">
+        <img src="image/chefs.png" alt="" style="z-index: 2;">
+        <div class="chefs-slider">
+            <ul id="slides">
+                <li class="slide showing">
+                     <div class="chef1">
+                    <img src="image/gregory.png" alt="">
+                    <div class="chef_name">
+                        <p>Gregory Flores</p>
+                        <p>Chef of the cold</p>
+                    </div>
+                        <img src="image/gregory_food1.png" alt="">
+                        <img src="image/gregory_food2.png" alt="">
+                        <img src="image/gregory_food3.png" alt="">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="chef2">
+                        <img src="image/annete.png" alt="">
+                        <div class="chef_name">
+                            <p>Annette Cooper</p>
+                            <p>Chef of the hot</p>
+                        </div>
+                        <img src="image/annete_food1.png" alt="">
+                        <img src="image/annete_food2.png" alt="">
+                        <img src="image/annete_food3.png" alt="">
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="chef3">
+                        <img src="image/greg.png" alt="">
+                        <div class="chef_name">
+                            <p>Greg Fox</p>
+                            <p>Сhef macro kitchen</p>
+                        </div>
+                        <img src="image/greg_food1.png" alt="">
+                        <img src="image/greg_food2.png" alt="">
+                        <img src="image/greg_food3.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <div class="logo">
+                    <img src="image/apple.png" alt="">
+                    <img src="image/HEALTHY SWITCHER.png" alt="">
+                </div>
+                <p>© Designed by Yellow Snow. All Rights Reserved. </p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+    var slides = document.querySelectorAll('#slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide,3000);
+        
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide+1)%slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+        </script>
+        <script src="js/food_page.js"></script>
+</body>
+</html>

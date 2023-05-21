@@ -14,24 +14,24 @@
 
 <body>
     <div class="container">
-        <div class="header">
+        <div id="header">
             <div class="logo">
                 <img src="image/apple.png" alt="">
                 <img src="image/HEALTHY SWITCHER.png" alt="">
             </div>
             <div class="list">
+                <a href="food_page.html">Main</a>
                 <div class="menu">
                     <a href="menu.html" class="butt">Menu</a>
                     <div class="menu-content">
                         <a href="menu.html#Breakfast">Breakfast</a>
                         <a href="menu.html#Lunch">Lunch</a>
                         <a href="menu.html#Dinner">Dinner</a>
-                        <a href="#">Drinks</a>
+                        <a href="menu.html#drinks">Drinks</a>
                     </div>
                 </div>
-                <a href="#">Recipes</a>
-                <a href="#">Chefs</a>
-                <a href="#">Contacts</a>
+                <a href="chefs.html">Chefs</a>
+                <a href="contacts.html">Contacts</a>
             </div>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -39,10 +39,10 @@
                   <span></span>
                 </label>
                 <ul class="menu__box">
+                  <li><a href="food_page.html">Main</a></li>
                   <li><a href="menu.html" class="butt">Menu</a></li>
-                  <li><a href="#">Recipes</a></li>
-                  <li><a href="#">Chefs</a></li>
-                  <li><a href="#">Contacts</a></li>
+                  <li><a href="chefs.html">Chefs</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
                 </ul>
               </div>
         </div>
@@ -79,16 +79,12 @@
         <div class="about_food">
             <p>In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
                 voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</p>
-            <swiper-container class="mySwiper" navigation="true">
-                <swiper-slide><img src="image/food_pic1.png" alt=""><img src="image/food_pic2.png"
-                        alt=""></swiper-slide>
-                <swiper-slide><img src="image/food_pic3.png" alt=""><img src="image/food_pic4.png"
-                        alt=""></swiper-slide>
-                <swiper-slide><img src="image/food_pic5.png" alt=""><img src="image/food_pic6.png"
-                        alt=""></swiper-slide>
-            </swiper-container>
-
-            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+                <div class="container_slider_css">
+                    <img class="photo_slider_css" src="image/food_pic1.png" alt="">
+                    <img class="photo_slider_css" src="image/food_pic2.png" alt="">
+                    <img class="photo_slider_css" src="image/food_pic3.png" alt="">
+                    <img class="photo_slider_css" src="image/food_pic4.png" alt="">
+                </div>
         </div>
          <img src="image/work.png" alt="">
         <div class="work">
@@ -273,8 +269,8 @@
                             <img src="image/Twitter.png" alt="">
                             <p>Twitter</p>
                         </div>
-                        <div class="follow">
-                            <p>follow us</p>
+                        <div class="button">
+                            follow us
                         </div>
                     </header>
                     <article>
@@ -289,8 +285,8 @@
                             <img src="image/Instagram.png" alt="">
                             <p>Instagram</p>
                         </div>
-                        <div class="follow">
-                            <p>follow us</p>
+                        <div class="button">
+                            follow us
                         </div>
                     </header>
                     <img src="image/inst.png" alt="" style="width: 100%;">
@@ -301,8 +297,8 @@
                             <img src="image/Facebook.png" alt="">
                             <p>facebook</p>
                         </div>
-                        <div class="follow">
-                            <p>follow us</p>
+                        <div class="button">
+                            follow us
                         </div>
                     </header>
                     <article>

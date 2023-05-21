@@ -12,17 +12,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div id="header">
             <div class="logo">
                 <img src="image/apple.png" alt="">
                 <img src="image/HEALTHY SWITCHER.png" alt="">
             </div>
             <div class="menu">
+                <a href="food_page.html#header">Main</a>
                 <a href="#">Menu</a>
-                <a href="#">Recipes</a>
-                <a href="#">Chefs</a>
-                <a href="#">Contacts</a>
+                <a href="chefs.html">Chefs</a>
+                <a href="contacts.html">Contacts</a>
             </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a href="food_page.html#header">Main</a></li>
+                  <li><a href="menu.html" class="butt">Menu</a></li>
+                  <li><a href="chefs.html">Chefs</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </div>
         </div>
     </div>
     <img src="image/line.png" alt="">
@@ -275,7 +287,7 @@
                 <p>MENU</p>
                 <p>Drinks Menu</p>
             </section>
-            <div class="drinks">
+            <div id="drinks">
                 <div class="drink_card">
                     <img src="image/dr1.webp" alt="">
                     <p>Cappuccino</p>

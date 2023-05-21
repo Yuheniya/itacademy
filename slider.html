@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    swiper-container {
-      width: 70%;
-    }
-
-    swiper-slide {
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 48%;
-      object-fit: cover;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-  <swiper-container class="mySwiper" navigation="true">
-    <swiper-slide><img src="image/food_pic1.png" alt=""><img src="image/food_pic2.png" alt=""></swiper-slide>
-    <swiper-slide><img src="image/food_pic3.png" alt=""><img src="image/food_pic4.png" alt=""></swiper-slide>
-    <swiper-slide><img src="image/food_pic5.png" alt=""><img src="image/food_pic6.png" alt=""></swiper-slide>
-  </swiper-container>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order</button>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">order field</h4>
+          </div>
+          <div class="modal-body">
+            <p>Your name</p>
+            <input type="text"><br>
+            <p>Your phone</p>
+            <input type="tel">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
 </body>
-
 </html>

@@ -1,0 +1,37 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.cards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 200px;
+    padding: 24px;
+}
+.cards img{
+    width: 56px;
+}
+.cards p{
+    font-family: 'Barlow';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+.cards div:hover{
+    background: #34C759;
+    border-radius: 6px;
+    h2{
+        color: white;
+    }
+    p{
+        color: #252525;
+    }
+}
