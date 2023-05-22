@@ -55,16 +55,16 @@
             <div class="number">
                 <img src="image/ic_call.png" alt="">
                 <p>+38 (063)833 24 15</p>
-                <span>Call Online</span>
+                <button><a href="#openModal">Call online</a></button>
             </div>
             <div class="apps">
                 <p>We are in social networks</p>
-                <button><img src="image/Twitter.png" alt=""></button>
-                <button><img src="image/Instagram.png" alt=""></button>
-                <button><img src="image/Facebook.png" alt=""></button>
+                <button><a href="https://twitter.com/"><img src="image/Twitter.png" alt=""></a></button>
+                <button><a href="https://www.instagram.com/"><img src="image/Instagram.png" alt=""></a></button>
+                <button><a href="https://www.facebook.com/"><img src="image/Facebook.png" alt=""></a></button>
             </div>
         </div>
-        <div class="maps"><div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/143/kyiv/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Киев</a><a href="https://yandex.by/maps/143/kyiv/house/velyka_vasylkivska_vulytsia_100/Z0kYcwZmSUcFQFtqfXhzd3lhZw==/?ll=30.516022%2C50.426524&utm_medium=mapframe&utm_source=maps&z=16.63" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Васильковская улица, 100 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=30.516022%2C50.426524&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDQ4ODIzOTE0ElPQo9C60YDQsNGX0L3QsCwg0JrQuNGX0LIsINCS0LXQu9C40LrQsCDQktCw0YHQuNC70YzQutGW0LLRgdGM0LrQsCDQstGD0LvQuNGG0Y8sIDEwMCIKDc4g9EEVw7RJQg%2C%2C&z=16.63" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+        <div id="map" class="maps"><div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/143/kyiv/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Киев</a><a href="https://yandex.by/maps/143/kyiv/house/velyka_vasylkivska_vulytsia_100/Z0kYcwZmSUcFQFtqfXhzd3lhZw==/?ll=30.516022%2C50.426524&utm_medium=mapframe&utm_source=maps&z=16.63" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Васильковская улица, 100 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=30.516022%2C50.426524&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNDQ4ODIzOTE0ElPQo9C60YDQsNGX0L3QsCwg0JrQuNGX0LIsINCS0LXQu9C40LrQsCDQktCw0YHQuNC70YzQutGW0LLRgdGM0LrQsCDQstGD0LvQuNGG0Y8sIDEwMCIKDc4g9EEVw7RJQg%2C%2C&z=16.63" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></div>
     </main>
     <footer>
         <div class="footer_logo">
@@ -75,5 +75,22 @@
             <p>© Designed by Yellow Snow. All Rights Reserved. </p>
         </div>
     </footer>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Call</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Do you really want to call the number <b>+38 (063)833 24 15</b></p>
+            </div>
+            <div class="modal-action">
+                <button>Yes</button>
+                <button><a href="#close" title="Close" class="close">Cancel</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

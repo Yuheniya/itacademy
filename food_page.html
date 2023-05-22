@@ -54,9 +54,8 @@
         <p>HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & <br> marinating, so you can cook a
             fresh
             homemade dinner in just 15 minutes.</p>
-        <div class="green_button">
-            <img src="image/green_button.png" alt="">
-            <p>Order Now</p>
+        <div class="order">
+            <button><a href="#openModal">Order now</a></button>
         </div>
         <div class="info">
             <div class="time">
@@ -67,12 +66,12 @@
             <div class="addres">
                 <img src="image/ic_near_me.png" alt="">
                 <p>Velyka Vasylkivska 100</p>
-                <span>Get Directions</span>
+                <span><a href="contacts.html#map"> Get Directions</a></span>
             </div>
             <div class="number">
                 <img src="image/ic_call.png" alt="">
                 <p>+38 (063)833 24 15</p>
-                <span>Call Online</span>
+                <span><a href="contacts.html#openModal"> Call Online</a></span>
             </div>
         </div>
         <img src="image/about.png" alt="">
@@ -308,7 +307,33 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Order window</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <input type="text" placeholder="Your Name"><br>
+              <input type="tel" placeholder="Your Phone"><br>
+            </div>
+            <div class="modal-action">
+                <button><a href="#callBack" title="Close" class="close">Call Back</a></button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="callBack" class="callBack">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h3>Within 5 minutes, you will get a call back</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="info">
@@ -336,5 +361,6 @@
             <p>© Designed by Yellow Snow. All Rights Reserved. </p>
         </div>
     </footer>
+
 </body>
 </html>

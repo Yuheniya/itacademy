@@ -90,28 +90,25 @@ body>img{
     color: #FFFFFF;
     opacity: 0.7;
 }
-.green_button{
-    position: relative;
-    width: 220px;
-    height: 72px;
+.order{
     margin: 40px auto 70px auto;
+    text-align: center;
 }
-.green_button img{
-    position: relative;
-
+.order button{
+    background: #34C759;
+    border-radius: 43px;
+    width: 200px;
+    border: none;
+    padding: 25px;
 }
-.green_button p{
-    position: absolute;
-    left: 24%;
-    top: 35%;
+.order a{
     font-family: 'Barlow';
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #1A1A1A;
-    opacity: 1;
+    text-decoration: none;
 }
 .info{
     display: flex;
@@ -142,6 +139,13 @@ body>img{
     mix-blend-mode: normal;
     opacity: 0.5;
     color: white;
+}
+.info a{
+    text-decoration: none;
+    color: white;
+}
+.info a:hover{
+    text-decoration: underline;
 }
 .about_food{
     display: flex;
@@ -538,4 +542,149 @@ footer .info{
     width: 100%;
     margin-bottom: 20px;
 }
+}
+.modal, .callBack{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.modal:target, .callBack:target{
+    opacity: 1;
+	  pointer-events: auto; 
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 250px auto; 
+  }
+}
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    background-color: #616161;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgb(0, 255, 47);
+  }
+}
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+.close:focus, .close:hover {
+    color:#A4A8B2;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.modal h3, .callBack h3{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.626);
+}
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+.modal-body input{
+    background-color:#A6A6A6;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+.modal-body input:focus{
+    background-color: white;
+    color: white;
+}
+.modal-action{
+    display: flex;
+    justify-content: right;
+}
+.modal-action button{
+    margin: 20px;
+    border: none;
+    background: #616161;
+}
+.modal-action button:hover{
+    text-decoration: underline;
+}
+.modal-action a{
+    font-family: 'Barlow';
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.3);
+}
+.modal-action a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    color: white;
 }
