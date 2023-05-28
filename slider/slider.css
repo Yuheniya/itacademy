@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+ .slider{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+ }
+#viewport {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ .ass button{
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: none;
+    margin: auto 0;
+ }
+.slider {
+    position: relative;
+    transition: 500ms;
+    width: calc(100% * 5);
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+ 
+.slide {
+    width: 80%;
+}
+ 
+.slide img {
+    width: 45%;
+    object-fit: cover;
+    object-position: 0;
+    padding: 2%;
+}
+
+ 

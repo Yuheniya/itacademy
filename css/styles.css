@@ -1,4 +1,6 @@
 body, html{
+    position: relative;
+    z-index: -2;
     background: url(../image/placeholder.png) no-repeat right, #1A1A1A;
     background-size: contain;
     background-position: top right;
@@ -97,9 +99,10 @@ body>img{
 .order button{
     background: #34C759;
     border-radius: 43px;
-    width: 200px;
+    width: 220px;
     border: none;
     padding: 25px;
+    height: auto;
 }
 .order a{
     font-family: 'Barlow';
@@ -163,21 +166,51 @@ body>img{
     text-align: center;
     color: #A6A6A6;
 }
-.container_slider_css{margin:50px auto;width:500px;height:300px;overflow:hidden;position:relative}
-.photo_slider_css{position:absolute;animation:round 16s infinite;opacity:0;width:100%}
-@keyframes round {
-25%{opacity:1}
-40%{opacity:0}
+.sliders{
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin: 0 auto;
+   justify-content: space-around;
+   padding: 50px 0;
 }
-img:nth-child(1){animation-delay:12s}
-img:nth-child(2){animation-delay:8s}
-img:nth-child(3){animation-delay:4s}
-img:nth-child(4){animation-delay:0}
-@media(min-width:0px) and (max-width:320px) {
-.container_slider_css{width:80%;height:190px}
+#viewport {
+   width: 80%;
+   margin: 0 auto;
+   overflow: hidden;
 }
-@media(min-width:321px) and (max-width:480px) {
-.container_slider_css{width:80%;height:190px}
+.sliders button{
+   width: 60px;
+   height: 60px;
+   background: none;
+   border: none;
+   margin: auto 0;
+}
+.sliders button img{
+    margin: -24px;
+}
+.sliders button:hover{
+    background: none;
+    box-shadow: 0px 10px 10px rgba(59, 185, 42, 0.548);
+}
+.slider {
+   position: relative;
+   transition: 500ms;
+   width: calc(100% * 5);
+   display: flex;
+   justify-content: start;
+   flex-wrap: nowrap;
+}
+
+.slide {
+   width: 80%;
+}
+
+.slide img {
+   width: 45%;
+   object-fit: cover;
+   object-position: 0;
+   padding: 2%;
 }
 .work{
     display: flex;
@@ -201,6 +234,7 @@ img:nth-child(4){animation-delay:0}
     border-radius: 6px;
     width: 200px;
     padding: 24px;
+    transition: 300ms ease;
 }
 .cards img{
     width: 56px;
@@ -216,7 +250,29 @@ img:nth-child(4){animation-delay:0}
 .cards div:hover{
     background: #34C759;
     border-radius: 6px;
-    color: #000000;
+    transition: 300ms ease;
+}
+.cards div h2{
+    color: rgba(255, 255, 255, 0.753);
+}
+.cards div hr{
+    width: 60px;
+    height: 2px;
+    border: none;
+    background-color: #34c759;
+    margin: 10px 0 25px 0;
+    transition: 300ms ease;
+
+}
+.cards div:hover p{
+    color: #303030;
+}
+.cards div:hover hr{
+    width: 90%;
+    background-color: #262626;
+}
+.cards div:hover h2{
+    color: #262626;
 }
 .rating{
     display: inline-flex;
@@ -274,23 +330,25 @@ img:nth-child(4){animation-delay:0}
     flex-direction: row;
     justify-content: space-between;
 }
-.button{
+button{
     background: #262626;
     border: 2px solid #303030;
     border-radius: 30px;
     width: 100px;
     height: 40px;
+}
+button a{
     text-align: center;
     font-family: 'Barlow';
     font-weight: 900;
     font-size: 10px;
+    text-decoration: none;
     line-height: 40px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
-    vertical-align: middle;
 }
-.button:hover{
+button:hover{
     background: #34C759;
     font-family: 'Barlow';
     color: #252525;
@@ -336,10 +394,39 @@ img:nth-child(4){animation-delay:0}
     justify-content: space-between;
 }
 .apps>div{
+    position: relative;
     background: #252525;
     border-radius: 6px;
     width: 30%;
+    height: 450px;
     margin-bottom: 120px;
+}
+.apps>div::before{
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+    background: linear-gradient(45deg, green, yellow, green, yellow, green, yellow);;
+    background-size: 500%;
+    z-index: -1;
+    animation: animate 30s ease infinite;
+    filter: blur(25px);
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 250% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.price{
+    color: rgba(255, 255, 255, 0.632);
 }
 header{
     display: flex;
@@ -373,9 +460,13 @@ article p:nth-child(2){
     color: rgba(255, 255, 255, 0.7);
     text-align: left;
 }
-article p:nth-child(3){
+article a{
     color: #34C759;
     text-align: left;
+    text-decoration: none;
+}
+article a:hover{
+    text-decoration: underline;
 }
 footer{
     background: #252525;
@@ -663,7 +754,7 @@ footer .info{
 }
 .modal-body input:focus{
     background-color: white;
-    color: white;
+    color: black;
 }
 .modal-action{
     display: flex;
@@ -687,4 +778,12 @@ footer .info{
     text-decoration: underline;
     opacity: 1;
     color: white;
+}
+.onTop{
+    position: sticky;
+    left: 5%;
+    top:100%;
+}
+.onTop img{
+    width: 50px;
 }

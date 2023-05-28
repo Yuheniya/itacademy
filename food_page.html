@@ -10,12 +10,13 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <div id="header">
-            <div class="logo">
+            <div class="logo" data-aos="flip-left" data-aos-duration="2000" animation-iteration-count:infinite>
                 <img src="image/apple.png" alt="">
                 <img src="image/HEALTHY SWITCHER.png" alt="">
             </div>
@@ -32,22 +33,26 @@
                 </div>
                 <a href="chefs.html">Chefs</a>
                 <a href="contacts.html">Contacts</a>
+                <a href="#openBasket" class="delivery">delivery</a>
             </div>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
-                  <span></span>
+                    <span></span>
                 </label>
                 <ul class="menu__box">
-                  <li><a href="food_page.html">Main</a></li>
-                  <li><a href="menu.html" class="butt">Menu</a></li>
-                  <li><a href="chefs.html">Chefs</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="food_page.html">Main</a></li>
+                    <li><a href="menu.html" class="butt">Menu</a></li>
+                    <li><a href="chefs.html">Chefs</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
                 </ul>
-              </div>
+            </div>
         </div>
     </div>
     <img src="image/line.png" alt="">
+    <div class="onTop">
+        <img src="image/ontop.png" alt="">
+    </div>
     <div class="container">
         <h1>Your <b>favourite food</b> <br>
             delivered <b>hot & fresh</b> </h1>
@@ -74,52 +79,61 @@
                 <span><a href="contacts.html#openModal"> Call Online</a></span>
             </div>
         </div>
+       
         <img src="image/about.png" alt="">
-        <div class="about_food">
+        <div class="about_food" data-aos="flip-down">
             <p>In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
                 voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</p>
-                <div class="container_slider_css">
-                    <img class="photo_slider_css" src="image/food_pic1.png" alt="">
-                    <img class="photo_slider_css" src="image/food_pic2.png" alt="">
-                    <img class="photo_slider_css" src="image/food_pic3.png" alt="">
-                    <img class="photo_slider_css" src="image/food_pic4.png" alt="">
+                <div class="sliders">
+                    <button class="prev" id="prev"><img src="image/left.png" alt=""></button>
+                    <div id="viewport">
+                        <div class="slider" style="left: 0">
+                            <div class="slide"><img src="image/food_pic1.png" alt=""><img src="image/food_pic3.png" alt=""></div>
+                            <div class="slide"><img src="image/food_pic2.png" alt=""><img src="image/food_pic4.png" alt=""></div>
+                            <div class="slide"><img src="image/food_pic3.png" alt=""><img src="image/food_pic1.png" alt=""></div>
+                            <div class="slide"><img src="image/food_pic4.png" alt=""><img src="image/food_pic2.png" alt=""></div>
+                            <div class="slide"><img src="image/food_pic5.png" alt=""><img src="image/food_pic2.png" alt=""></div>
+                        </div>
+                    </div>
+                    <button class="next" id="next"><img src="image/right.png" alt=""></button>
                 </div>
         </div>
-         <img src="image/work.png" alt="">
+        <img src="image/work.png" alt="">
         <div class="work">
             <div class="cards">
-                <div class="card1">
+                <div class="card1" data-aos="fade-right">
                     <h2>Pick meals</h2>
-                    <img src="image/card_line_green.png" alt="">
+                    <hr>
                     <p>Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
                         options.</p>
                 </div>
-                <div class="card2">
+                <div class="card2" data-aos="fade-left">
                     <h2>Choose how often</h2>
-                    <img src="image/card_line_green.png" alt="">
+                    <hr>
                     <p>Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</p>
                 </div>
-                <div class="card3">
+                <div class="card3" data-aos="fade-right">
                     <h2>fast deliveries</h2>
-                    <img src="image/card_line_green.png" alt="">
+                    <hr>
                     <p>Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.</p>
                 </div>
-                <div class="card4">
+                <div class="card4" data-aos="fade-left">
                     <h2>tasty meals</h2>
-                    <img src="image/card_line_green.png" alt="">
+                    <hr>
                     <p>Gobble makes cooking fast, so you have more time to unwind and be with family.</p>
                 </div>
             </div>
-        </div> 
+        </div>
         <img src="image/dishes.png" alt="">
         <div class="dishes">
             <div class="product_cards">
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic6.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
                             <div class="rating">
                                 <img src="image/Star1.png" alt="">
@@ -128,34 +142,42 @@
                                 <img src="image/Star1.png" alt="">
                                 <img src="image/Star1.png" alt="">
                             </div>
-                            <div class="button">Order</div>
+                            <div class="price"> 15$</div>
+                            <button><a href="#openBasket" class="in-basket" data-sb-id-or-vendor-code="001"
+                                data-sb-product-name="Featured Meal"
+                                data-sb-product-price="15"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="image/food_pic6">Order</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic4.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
-                        <div class="rating">
-                            <img src="image/Star1.png" alt="">
-                            <img src="image/Star1.png" alt="">
-                            <img src="image/Star1.png" alt="">
-                            <img src="image/Star1.png" alt="">
-                            <img src="image/Star1.png" alt="">
-                        </div>
-                        <div class="button">Order</div>
+                            <div class="rating">
+                                <img src="image/Star1.png" alt="">
+                                <img src="image/Star1.png" alt="">
+                                <img src="image/Star1.png" alt="">
+                                <img src="image/Star1.png" alt="">
+                                <img src="image/Star1.png" alt="">
+                            </div>
+                            <div class="price"> 18,5$</div>
+                            <button class="in-basket"><a href="#openModal">Order</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic3.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
                             <div class="rating">
                                 <img src="image/Star1.png" alt="">
@@ -164,16 +186,18 @@
                                 <img src="image/Star1.png" alt="">
                                 <img src="image/Star1.png" alt="">
                             </div>
-                            <div class="button">Order</div>
+                            <div class="price"> 24$</div>
+                            <button class="in-basket"><a href="#openModal">Order</a></button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic1.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
                             <div class="rating">
                                 <img src="image/Star1.png" alt="">
@@ -182,16 +206,19 @@
                                 <img src="image/Star1.png" alt="">
                                 <img src="image/Star1.png" alt="">
                             </div>
-                            <div class="button">Order</div>
+                            <div class="price"> 27$</div>
+
+                            <button class="in-basket"><a href="#openModal">Order</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic5.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
                             <div class="rating">
                                 <img src="image/Star1.png" alt="">
@@ -200,16 +227,19 @@
                                 <img src="image/Star1.png" alt="">
                                 <img src="image/Star1.png" alt="">
                             </div>
-                            <div class="button">Order</div>
+                            <div class="price"> 17$</div>
+
+                            <button class="in-basket"><a href="#openModal">Order</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="product_card1">
+                <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="image/food_pic7.png" alt="">
                     <div class="product_info">
                         <h1>Featured Meal</h1>
                         <p>Served with french fries + drink</p>
-                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
+                        <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
+                            patty and more...</p>
                         <div class="click">
                             <div class="rating">
                                 <img src="image/Star1.png" alt="">
@@ -218,7 +248,9 @@
                                 <img src="image/Star1.png" alt="">
                                 <img src="image/Star1.png" alt="">
                             </div>
-                            <div class="button">Order</div>
+                            <div class="price"> 21$</div>
+
+                            <button class="in-basket"><a href="#openModal">Order</a></button>
                         </div>
                     </div>
                 </div>
@@ -227,7 +259,7 @@
         <img src="image/chefs.png" alt="">
         <div class="chefs">
             <div class="months_chefs">
-                <div class="chef1">
+                <div class="chef1" data-aos="flip-down" data-aos-duration="1000">
                     <img src="image/gregory.png" alt="">
                     <div class="chef_name">
                         <p>Gregory Flores</p>
@@ -237,7 +269,7 @@
                     <img src="image/gregory_food2.png" alt="">
                     <img src="image/gregory_food3.png" alt="">
                 </div>
-                <div class="chef2">
+                <div class="chef2" data-aos="flip-down" data-aos-duration="2000">
                     <img src="image/annete.png" alt="">
                     <div class="chef_name">
                         <p>Annette Cooper</p>
@@ -247,7 +279,7 @@
                     <img src="image/annete_food2.png" alt="">
                     <img src="image/annete_food3.png" alt="">
                 </div>
-                <div class="chef3">
+                <div class="chef3" data-aos="flip-down" data-aos-duration="3000">
                     <img src="image/greg.png" alt="">
                     <div class="chef_name">
                         <p>Greg Fox</p>
@@ -258,7 +290,7 @@
                     <img src="image/greg_food3.png" alt="">
                 </div>
             </div>
-        </div> 
+        </div>
         <img src="image/social.png" alt="">
         <div class="social">
             <div class="apps">
@@ -268,14 +300,13 @@
                             <img src="image/Twitter.png" alt="">
                             <p>Twitter</p>
                         </div>
-                        <div class="button">
-                            follow us
-                        </div>
+                        <button><a href="https://twitter.com/">follow us</a></button>
                     </header>
                     <article>
                         <p>24 Jun at 16:20 pm</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        <p>@DennisFerguson</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        <a href="https://twitter.com/dennisfergs69?lang=en">@Dennis Ferguson</a>
                     </article>
                 </div>
                 <div class="instagram">
@@ -284,9 +315,7 @@
                             <img src="image/Instagram.png" alt="">
                             <p>Instagram</p>
                         </div>
-                        <div class="button">
-                            follow us
-                        </div>
+                        <button><a href="https://www.instagram.com/">follow us</a></button>
                     </header>
                     <img src="image/inst.png" alt="" style="width: 100%;">
                 </div>
@@ -296,13 +325,13 @@
                             <img src="image/Facebook.png" alt="">
                             <p>facebook</p>
                         </div>
-                        <div class="button">
-                            follow us
-                        </div>
+                        <button><a href="https://www.facebook.com/">follow us</a></button>
                     </header>
                     <article>
                         <p>26 Jun at 16:20 pm</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur
+                            adipiscing </p>
                     </article>
                 </div>
             </div>
@@ -310,19 +339,19 @@
     </div>
     <div id="openModal" class="modal">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Order window</h3>
-              <a href="#close" title="Close" class="close">×</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Order window</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Your Name"><br>
+                    <input type="tel" placeholder="Your Phone"><br>
+                </div>
+                <div class="modal-action">
+                    <button><a href="#callBack" title="Close" class="close">Call Back</a></button>
+                </div>
             </div>
-            <div class="modal-body">    
-              <input type="text" placeholder="Your Name"><br>
-              <input type="tel" placeholder="Your Phone"><br>
-            </div>
-            <div class="modal-action">
-                <button><a href="#callBack" title="Close" class="close">Call Back</a></button>
-            </div>
-          </div>
         </div>
     </div>
     <div id="callBack" class="callBack">
@@ -345,12 +374,12 @@
             <div class="addres">
                 <img src="image/ic_near_me.png" alt="">
                 <p>Velyka Vasylkivska 100</p>
-                <span>Get Directions</span>
+                <span><a href="contacts.html#map"> Get Directions</a></span>
             </div>
             <div class="number">
                 <img src="image/ic_call.png" alt="">
                 <p>+38 (063)833 24 15</p>
-                <span>Call Online</span>
+                <span><a href="contacts.html#openModal"> Call Online</a></span>
             </div>
         </div>
         <div class="footer_logo">
@@ -361,6 +390,11 @@
             <p>© Designed by Yellow Snow. All Rights Reserved. </p>
         </div>
     </footer>
-
+    
+    <script src="js/food_page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init() </script>
+    
 </body>
+
 </html>
