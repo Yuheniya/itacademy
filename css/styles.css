@@ -337,6 +337,9 @@ button{
     width: 100px;
     height: 40px;
 }
+.click button a{
+    padding: 25px;
+}
 button a{
     text-align: center;
     font-family: 'Barlow';
@@ -434,6 +437,9 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid #303030;
     margin: 25px;
+}
+header button a{
+    padding: 25px 0;
 }
 .name{
     display: flex;
@@ -780,10 +786,43 @@ footer .info{
     color: white;
 }
 .onTop{
-    position: sticky;
-    left: 5%;
-    top:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 12px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+   
+}
+.onTop::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(90deg, #b9d470, #51ef83, #2fcc9a, #034213);
+    background-size: 400%;
+    z-index: -1;
+    width: 50px;
+    animation: animate 10s ease infinite;
+    filter: blur(25px);
 }
 .onTop img{
     width: 50px;
+    rotate: 90deg;
+   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

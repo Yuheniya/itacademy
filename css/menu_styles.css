@@ -2,6 +2,8 @@ body, html{
     background: url(../image/placeholder2.jpg) no-repeat right, #1A1A1A;
     background-size: contain;
     background-position: top right;
+    padding: 0;
+    margin: 0;
 }
 .container{
     width: 1110px;
@@ -139,6 +141,35 @@ section p:last-child{
     color: rgba(255, 255, 255, 0.5);
     text-align: left;
 }
+.order-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+button{
+    background: #262626;
+    border: 2px solid #303030;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+}
+button a{
+    text-align: center;
+    font-family: 'Barlow';
+    font-weight: 900;
+    font-size: 10px;
+    text-decoration: none;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+button:hover{
+    background: #34C759;
+    font-family: 'Barlow';
+    color: #252525;
+}
 .rating{
     display:inline-flex;
     flex-direction: row-reverse;
@@ -157,7 +188,7 @@ section p:last-child{
     line-height: 30px;
     letter-spacing: 1.5px;
     color: #B3B3B3;
-    padding: 20px;
+    padding: 0 5px;
 }
 #drinks{
     display: flex;
@@ -193,11 +224,155 @@ section p:last-child{
 .price{
     font-family: 'Barlow';
     font-weight: 900;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 1.5px;
     color: #B3B3B3;
-    padding: 20px;
+}
+.modal, .callBack{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.modal:target, .callBack:target{
+    opacity: 1;
+	  pointer-events: auto; 
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 250px auto; 
+  }
+}
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    background-color: #616161;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgb(0, 255, 47);
+  }
+}
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+.close:focus, .close:hover {
+    color:#A4A8B2;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.modal h3, .callBack h3{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.626);
+}
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+.modal-body input{
+    background-color:#A6A6A6;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+.modal-body input:focus{
+    background-color: white;
+    color: black;
+}
+.modal-action{
+    display: flex;
+    justify-content: right;
+}
+.modal-action button{
+    margin: 20px;
+    border: none;
+    background: #616161;
+}
+.modal-action button:hover{
+    text-decoration: underline;
+}
+.modal-action a{
+    font-family: 'Barlow';
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.3);
+}
+.modal-action a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    color: white;
 }
 footer{
     background: #252525;
@@ -356,4 +531,46 @@ footer{
     .drink_card{
         width: 45%;
     }
+}
+
+.onTop{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 12px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+   
+}
+.onTop::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(90deg, #b9d470, #51ef83, #2fcc9a, #034213);
+    background-size: 400%;
+    z-index: -1;
+    width: 50px;
+    animation: animate 10s ease infinite;
+    filter: blur(25px);
+}
+.onTop img{
+    width: 50px;
+    rotate: 90deg;
+   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
