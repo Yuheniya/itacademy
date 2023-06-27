@@ -826,3 +826,124 @@ footer .info{
 		background-position: 0% 50%;
 	}
 }
+.basket{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.basket:target{
+    opacity: 1;
+    pointer-events: auto; 
+  overflow-y: auto;
+}
+.basket-dialog{
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .basket-dialog {
+        max-width: 500px;
+        margin: 250px auto; 
+    }
+  }
+  .basket-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    outline: 0;
+    background-color: #616161;
+  }
+  @media (min-width: 768px) {
+    .basket-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgb(0, 255, 47);
+    }
+  }
+  .basket-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+  }
+  .basket-title{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+.close:focus, .close:hover {
+    color:#A4A8B2;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.basket-body {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    overflow: auto;
+}
+.basket-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.basket-action button{
+    margin: 20px;
+    border: none;
+    background: #616161;
+}
+.basket-action button:hover{
+    text-decoration: underline;
+}
+.basket-action a{
+    font-family: 'Barlow';
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.3);
+}
+.basket-action a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    color: white;
+}
+.basket-content h3{
+    color: #CFD8DC;
+}
+.basket-content p{
+    color: #CFD8DC;
+}
+td{
+    color: #CFD8DC;
+    border-bottom: 2px solid rgb(81, 81, 81);
+    padding: 15px;
+}

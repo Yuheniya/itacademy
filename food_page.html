@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HEALTHY SWITCHER</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link type="image/x-icon" href="image/apple.png" rel="shortcut icon">
+<link type="Image/x-icon" href="image/apple.png" rel="icon">
     
 </head>
 
@@ -34,6 +36,7 @@
                 </div>
                 <a href="chefs.html">Chefs</a>
                 <a href="contacts.html">Contacts</a>
+                <button><a href="#openBasket">delivery</a></button>
             </div>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -131,9 +134,9 @@
         <div class="dishes">
             <div class="product_cards">
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic6.png" alt="food_pic">
+                    <img src="image/food_pic6.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Pumpkin soup</h1>
+                        <h1 class="product-name">Pumpkin soup</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -145,15 +148,15 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_1"> 15$</div>
-                            <button onclick="order(1)"><a href="#openModal">Order</a></button>
+                            <div class="price" id="priceId"> 15$</div>
+                            <button onclick="order(1)">Order</button>
                         </div>
                     </div>
                 </div>
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic4.png" alt="food_pic">
+                    <img src="image/food_pic4.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Salad</h1>
+                        <h1 class="product-name">Salad</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -165,15 +168,15 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_2"> 18,5$</div>
-                            <button  onclick="order(2)"><a href="#openModal">Order</a></button>
+                            <div class="price" id="priceId"> 18,5$</div>
+                            <button  onclick="order(2)">order</button>
                         </div>
                     </div>
                 </div>
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic3.png" alt="food_pic">
+                    <img src="image/food_pic3.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Eggs</h1>
+                        <h1 class="product-name">Eggs</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -185,15 +188,15 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_3"> 24$</div>
-                            <button onclick="order(3)"><a href="#openModal">Order</a></button>
+                            <div class="price" id="priceId"> 24$</div>
+                            <button onclick="order(3)">order</button>
                         </div>
                     </div>
                 </div>
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic1.png" alt="food_pic">
+                    <img src="image/food_pic1.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Backed fish</h1>
+                        <h1 class="product-name">Backed fish</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -205,16 +208,16 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_4"> 27$</div>
+                            <div class="price" id="priceId"> 27$</div>
 
-                            <button onclick="order(4)"><a href="#openModal">Order</a></button>
+                            <button onclick="order(4)">order</button>
                         </div>
                     </div>
                 </div>
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic5.png" alt="food_pic">
+                    <img src="image/food_pic5.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Avocado salad</h1>
+                        <h1 class="product-name">Avocado salad</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -226,16 +229,16 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_5"> 17$</div>
+                            <div class="price" id="priceId"> 17$</div>
 
-                            <button onclick="order(5)"><a href="#openModal">Order</a></button>
+                            <button onclick="order(5)">order</button>
                         </div>
                     </div>
                 </div>
                 <div class="product_card1" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src="image/food_pic7.png" alt="food_pic">
+                    <img src="image/food_pic7.png" alt="food_pic" class="product-card-img">
                     <div class="product_info">
-                        <h1>Vegetables bowls</h1>
+                        <h1 class="product-name">Vegetables bowls</h1>
                         <p>Served with french fries + drink</p>
                         <p>Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp
                             patty and more...</p>
@@ -247,9 +250,9 @@
                                 <img src="image/Star1.png" alt="rating-star">
                                 <img src="image/Star1.png" alt="rating-star">
                             </div>
-                            <div class="price" id="priceId_6"> 21$</div>
+                            <div class="price" id="priceId"> 21$</div>
 
-                            <button onclick="order(6)"><a href="#openModal">Order</a></button>
+                            <button onclick="order(6)">order</button>
                         </div>
                     </div>
                 </div>
@@ -354,6 +357,33 @@
             </div>
         </div>
     </div>
+    <div id="openBasket" class="basket">
+        <div class="basket-dialog">
+            <div class="basket-content">
+                <div class="basket-header">
+                    <h3 class="basket-title">products in the basket:</h3>
+                    <p></p>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <table id="basket-body">
+                    <tr>
+                        <td id="basket-products-name" class="basket-products-name">Product name</td>
+                        <td id="basket-product-price" class="basket-product-price">Price</td>
+                    </tr>
+                </table>
+                <div class="basket-action">
+                    <div  class="totalprice">
+                        <p id="totalprice">Total price:</p>
+                    </div>
+                    <div id="quantity" class="quantity">
+                        <p>Quantity</p>
+                    </div>
+                    <button onclick="return checkForm()" action="/"><a href="#callBack" title="Close" class="close">place an order</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="callBack" class="callBack">
         <div class="modal-dialog">
             <div class="modal-content">
