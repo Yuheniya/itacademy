@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(14 7 2);
+}
+
+.container{
+    width: 70%;
+    height: 100%;
+    margin: 0 15%;
+    background-image: url(images/main_background3.jpg);
+}
+
+.header{
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000c7;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: wheat;
+}
+.menu a:hover{
+    color:aliceblue;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    background-color: #00000091;
+}
+.pravo{
+    font-size: 50px;
+    color: wheat;
+    width: 60%;
+    padding-left: 50px;
+    text-align: center;
+}
+.photo{
+    padding: 50px;
+}
+.photo img{
+    width: 200px;
+}
+h1{
+    font-size: 70px;
+    color: rgb(189, 174, 145);
+    margin: 0;
+    padding-top: 50px;
+}
+.about_me{
+    background-color: rgb(14 7 2);
+    text-align: center;
+
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact>div{
+    width: 45%;
+}
